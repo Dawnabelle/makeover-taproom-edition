@@ -5,58 +5,53 @@ import SellPint from './SellPint';
 
 class Drink extends React.Component {
 
-  constructor(props) {
-    super(props);
-    this.state = {
-      pintsRemaining: 124
-    };
-    this.handleSellPint = this.handleSellPint.bind(this);
-  }
-  handleSellPint(){
-    this.setState({pintsRemaining: 124});
-  }
-  sellPint(){
-    let newPintsRemaining = this.state.pintsRemaining;
-    newPintsRemaining -= 1;
-    this.setState({pintsRemaining: newPintsRemaining})
-  }
-
+  // constructor(props) {
+  //   super(props);
+  //   this.state = {
+  //     pintsRemaining: 124
+  //   };
+  //   this.handleSellPint = this.handleSellPint.bind(this);
+  // }
+  // handleSellPint(){
+  //   this.setState({pintsRemaining: 124});
+  // }
+  // sellPint(){
+  //   let newPintsRemaining = this.state.pintsRemaining;
+  //   newPintsRemaining -= 1;
+  //   this.setState({pintsRemaining: newPintsRemaining})
+  // }
+  //
 
   render(){
-    const drinkInfo =
-    <div>
-      <style jsx>
-        {`
-          .pintInfo {
-            padding: 10px 40px;
-            background-color: peru;
-            max-width: 50%;
-            margin: auto;
-            margin-top: 100px;
-            font-size: 1.1em;
-          }
-          `}
-        </style>
-        <div className="pintInfo">
-          <div>
-            <p>{props.name}</p>
-            <p>Brewery: {props.brand}</p>
-            <p>Price: {props.price}</p>
-            <p>Alcohol Content: {props.alcoholContent}%</p>
-            <p>Pints Remaining: {props.pintsRemaining}</p>
-          </div>
-          <div>
-            <button onClick={sellPint}>Sell Pint</button>
+    return (
+      <div>
+        <style jsx>
+          {`
+            .pintInfo {
+              padding: 10px 40px;
+              background-color: peru;
+              max-width: 50%;
+              margin: auto;
+              margin-top: 100px;
+              font-size: 1.1em;
+            }
+            `}
+          </style>
+          <div className="pintInfo">
+            <div>
+              <p>{props.name}</p>
+              <p>Brewery: {props.brand}</p>
+              <p>Price: {props.price}</p>
+              <p>Alcohol Content: {props.alcoholContent}%</p>
+              <p>Pints Remaining: {props.pintsRemaining}</p>
+            </div>
+            <div>
+              <button onClick={sellPint}>Sell Pint</button>
+            </div>
           </div>
         </div>
-      </div>;
-
+    )
   }
-  return (
-    <div className="pintInfo">
-      {drinkInfo}
-    </div>);
-}
 
 Drink.propTypes = {
   name: PropTypes.string.isRequired,

@@ -15,6 +15,7 @@ function DrinkPage() {
       </style>
       <div className="homeStyle">
         <h1>On Tap at Dawn's</h1>
+        <p>Get in here quick folks, before drinks it all!</p>
         <DrinkList/>
       </div>
     </div>
