@@ -3,10 +3,6 @@ import PropTypes from 'prop-types';
 
 function Drink(props) {
 
-  function handleSellPint(Drink) {
-    props.pintsRemaining = props.pintsRemaining -= 1;
-  }
-
   const drinkInfo =
     <div>
       <style jsx>
@@ -16,10 +12,7 @@ function Drink(props) {
           background-color: rgba(222, 127, 33, .9);
           max-width: 50%;
           margin: auto;
-        }
-        .sellButton {
-          max-height: 30px;
-          margin-top: 30px;
+          margin-top: 100px;
         }
       `}
       </style>
@@ -37,7 +30,6 @@ function Drink(props) {
   return (
     <div className="pintInfo">
       {drinkInfo}
-      <button className="sellButton" onClick={() => this.props.handleSellPint(Drink)}>Bye Bye Pint</button>
     </div>);
 }
 
