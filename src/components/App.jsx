@@ -14,6 +14,9 @@ function App() {
     <div>
       <style jsx>
         {`
+          body {
+            background-color: teal;
+          }
           .appStyle {
             text-align: center;
             margin: auto;
@@ -23,7 +26,11 @@ function App() {
             background-repeat: no-repeat;
             margin: 0;
             padding: 0;
+            padding-top: 50px;
             width: 1024;
+          }
+          .appStyle p {
+            font-size: 1.3em;
           }
         `}
       </style>
@@ -31,12 +38,14 @@ function App() {
       <div className='appStyle'>
         <div>
           <h1>Dawn's Bar</h1>
-          <h2>Where you come when React drives you to drink!</h2>
+          <p>Where you come when React drives you to drink!</p>
         </div>
         <DrinkPage/>
-        <Switch>
-          <Route component={Error404}/>
-        </Switch>
+        <div>
+          <Switch>
+            <Route component={Error404}/>
+          </Switch>
+        </div>
       </div>
     </div>
   );

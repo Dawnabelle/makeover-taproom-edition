@@ -8,7 +8,7 @@ function DrinkPage() {
       <style jsx>
         {`
           .homeStyle h1 {
-            padding-top: 10px;
+            padding-top: 150px;
           }
            `
         }
