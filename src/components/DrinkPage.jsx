@@ -21,7 +21,7 @@ function DrinkPage() {
       </style>
       <div className="homeStyle">
         <NavBar/>
-          <h1>On Tap at Dawn's</h1>
+        <h1>On Tap at Dawn's</h1>
         <DrinkList/>
       </div>
     </div>

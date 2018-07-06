@@ -35,6 +35,8 @@ function NewDrinkForm(props) {
         <input type='text' placeholder='alcohol content' ref={(input) => {_alcoholContent = input;}}/>
         <input type='text' placeholder='number of pints' ref={(input) => {_pintsRemaining = input;}}/>
         <button type='submit' onClick={handleNewDrinkFormSubmit}>Add New Drink</button>
+      </form>
+    </div>
   )
 }
 

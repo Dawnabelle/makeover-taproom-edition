@@ -8,9 +8,9 @@ function Drink(props) {
   }
 
   const drinkInfo =
-  <div>
-    <style jsx>
-      {`
+    <div>
+      <style jsx>
+        {`
         .pintInfo {
           padding: 10px 40px;
           background-color: rgba(222, 127, 33, .9);
@@ -22,23 +22,23 @@ function Drink(props) {
           margin-top: 30px;
         }
       `}
-    </style>
-    <div className="pintInfo">
-      <div>
-        <p>{props.name}</p>
-        <p>Brewery: {props.brand}</p>
-        <p>Price: {props.price}</p>
-        <p>Alcohol Content: {props.alcoholContent}%</p>
-        <p>Pints Remaining: {props.pintsRemaining}</p>
-      </div>
-    </div>
-  </div>
-
-    return (
+      </style>
       <div className="pintInfo">
-        {drinkInfo}
-        <button className="sellButton" onClick={() => this.props.handleSellPint(Drink)}>Bye Bye Pint</button>
-      </div>)
+        <div>
+          <p>{props.name}</p>
+          <p>Brewery: {props.brand}</p>
+          <p>Price: {props.price}</p>
+          <p>Alcohol Content: {props.alcoholContent}%</p>
+          <p>Pints Remaining: {props.pintsRemaining}</p>
+        </div>
+      </div>
+    </div>;
+
+  return (
+    <div className="pintInfo">
+      {drinkInfo}
+      <button className="sellButton" onClick={() => this.props.handleSellPint(Drink)}>Bye Bye Pint</button>
+    </div>);
 }
 
 Drink.propTypes = {
