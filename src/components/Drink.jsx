@@ -5,22 +5,22 @@ import SellPint from './SellPint';
 
 class Drink extends React.Component {
 
-  // constructor(props) {
-  //   super(props);
-  //   this.state = {
-  //     pintsRemaining: 124
-  //   };
-  //   this.handleSellPint = this.handleSellPint.bind(this);
-  // }
-  // handleSellPint(){
-  //   this.setState({pintsRemaining: 124});
-  // }
-  // sellPint(){
-  //   let newPintsRemaining = this.state.pintsRemaining;
-  //   newPintsRemaining -= 1;
-  //   this.setState({pintsRemaining: newPintsRemaining})
-  // }
-  //
+  constructor(props) {
+    super(props);
+    this.state = {
+      pintsRemaining: 124
+    };
+    this.handleSellPint = this.handleSellPint.bind(this);
+  }
+  handleSellPint(){
+    this.setState({pintsRemaining: 124});
+  }
+  sellPint(){
+    let newPintsRemaining = this.state.pintsRemaining;
+    newPintsRemaining -= 1;
+    this.setState({pintsRemaining: newPintsRemaining})
+  }
+
 
   render(){
     return (
