@@ -14,10 +14,10 @@ View _[New Taproom](https://dawnabelle.github.io/taproom-makeover/)_ online when
 _June 29th, 2018_
 
 ### Description
-_This app will showcase the features of a fictional taproom <br>_
+Currently broken, please see [mushy](https://github.com/Dawnabelle/mushy) for current status.
 
 ### MVP Component Map
-<div style="text-align:center"><img src="src/assets/component-map.png" alt="sketch of component map" width="200"></div>
+<div style="text-align:center"><img src="src/assets/component-map.jpg" alt="sketch of component map" width="200"></div>
 
 
 ### Setup/Installation
